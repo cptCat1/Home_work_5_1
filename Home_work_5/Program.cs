@@ -121,3 +121,5 @@ Console.WriteLine(d[1], d[1]); // ne razobralsa
 //    Console.SetCursorPosition(19, i);
 //    Console.Write('*');
 //}
+1111
+    11
