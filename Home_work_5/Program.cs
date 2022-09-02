@@ -140,6 +140,34 @@ Console.WriteLine($"a = {a}"); // esli 3 i 2 to otvet ne chislo. Pochemu?
 
 
 
+//5.2.3--------------------------------------
+
+/*double r, line, sqrt;
+Console.WriteLine($"Enter radius:");
+r = double.Parse(Console.ReadLine());
+Console.WriteLine($"line = {line = r * 2 * Math.PI}");
+Console.WriteLine($"Sqrt = {sqrt = Math.PI * Math.Pow(r, 2)}");
+*/
+
+///////////////
+
+/*double r, sqrt, v;
+Console.WriteLine($"Enter radius:");
+r = double.Parse(Console.ReadLine());
+Console.WriteLine($"Sqrt = {sqrt = 4 * Math.PI * Math.Pow(r, 2)}");
+Console.WriteLine($"v = {v = 4 * Math.PI * Math.Pow(r, 3) / 3}");
+*/
+
+///////////////
+
+/*double h, r, v;
+Console.WriteLine($"Enter height:");
+h = double.Parse(Console.ReadLine());
+Console.WriteLine($"Enter radius:");
+r = double.Parse(Console.ReadLine());
+Console.WriteLine($"v = {v = Math.PI * h * Math.Pow(r, 2)}");
+*/
+
 //5.2.5--------------------------------------
 
 //for (int i = 0; i <= 19; i++)
