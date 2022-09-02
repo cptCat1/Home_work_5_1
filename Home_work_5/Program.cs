@@ -86,7 +86,9 @@
 
 //5.2.1--------------------------------------
 
-double x = 90;
+//mnogo woprosow po zapisiam w primerach ot docs.microsoft
+
+/*double x = 90;
 double y = Math.Cos(x * Math.PI / 180);
 Console.WriteLine(y);
 
@@ -97,6 +99,45 @@ Console.WriteLine(b);
 double c = 90;
 double[] d = Math.SinCos(c * Math.PI / 180);
 Console.WriteLine(d[1], d[1]); // ne razobralsa
+*/
+
+
+/*string a = "1 2 3";
+a = a.Replace(' ', ',').Replace('1','2');
+Console.WriteLine(a); // tyt poniatno
+*/
+
+/*String s = new String('a', 3);
+Console.WriteLine("The initial string: '{0}'", s);
+s = s.Replace('a', 'b').Replace('b', 'c').Replace('c', 'd');
+Console.WriteLine("The final string: '{0}'", s);
+tut nie pojmu zachem {0} vezde staviat
+ */
+
+//5.2.2--------------------------------------
+
+/*double a, b, c;
+Console.WriteLine($"Enter b:");
+b = double.Parse(Console.ReadLine());
+Console.WriteLine($"Enter c:");
+c = double.Parse(Console.ReadLine());
+Console.WriteLine($"a = {Math.Pow(b, 10) * Math.Pow(c, 3)}");
+*/
+
+/////////////
+
+/*double a, b, c;
+Console.WriteLine($"Enter b:");
+b = double.Parse(Console.ReadLine());
+Console.WriteLine($"Enter c:");
+c = double.Parse(Console.ReadLine());
+a = Math.Pow(c, 2) - Math.Pow(b, 2);
+a = Math.Sqrt(a);
+Console.WriteLine($"a = {a}"); // esli 3 i 2 to otvet ne chislo. Pochemu?
+*/
+
+/////////////
+
 
 
 //5.2.5--------------------------------------
@@ -121,5 +162,3 @@ Console.WriteLine(d[1], d[1]); // ne razobralsa
 //    Console.SetCursorPosition(19, i);
 //    Console.Write('*');
 //}
-1111
-    11
