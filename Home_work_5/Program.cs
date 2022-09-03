@@ -170,7 +170,7 @@ Console.WriteLine($"v = {v = Math.PI * h * Math.Pow(r, 2)}");
 
 //5.2.4--------------------------------------
 
-Console.WriteLine("Enter your email:");
+/*Console.WriteLine("Enter your email:");
 string mail = Console.ReadLine();
 char symb1 = '@';
 char symb2 = '.';
@@ -194,6 +194,37 @@ while (a == false)
 string email = mail.Trim();
 Console.Clear();
 Console.WriteLine($"Thank you! Your email: {email}");
+*/
+
+Console.WriteLine("Enter your email:");
+string mail = Console.ReadLine();
+string[] email = mail.Split(new char[] { '@' });
+string[] el = email[1].Split(new char[] { '.' });
+while (email.Length != 2)
+{
+    Console.WriteLine("Enter a valid email address!");
+    mail = Console.ReadLine();
+    string[] email = mail.Split(new char[] { '@' });
+    email = email[1].Split(new char[] { '.' });
+
+    while (el.Length != 2)
+    {
+        Console.WriteLine("Enter a valid email address!");
+        mail = Console.ReadLine();
+        string[] a = mail.Split(new char[] { '@' });
+
+
+
+
+        string[] el = email[1].Split(new char[] { '.' });
+        while (el.Length != 2)
+        {
+
+        }
+    }
+}
+Console.WriteLine($"Thank you! You email: {}");
+
 
 
 //5.2.5--------------------------------------
