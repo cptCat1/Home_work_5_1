@@ -138,8 +138,7 @@ Console.WriteLine($"a = {a}"); // esli 3 i 2 to otvet ne chislo. Pochemu?
 
 /////////////
 
-double a, k, z;
-a = M A
+//Primer 3
 
 //5.2.3--------------------------------------
 
@@ -168,6 +167,34 @@ Console.WriteLine($"Enter radius:");
 r = double.Parse(Console.ReadLine());
 Console.WriteLine($"v = {v = Math.PI * h * Math.Pow(r, 2)}");
 */
+
+//5.2.4--------------------------------------
+
+Console.WriteLine("Enter your email:");
+string mail = Console.ReadLine();
+char symb1 = '@';
+char symb2 = '.';
+Console.Clear();
+
+bool a = false;
+while (a == false)
+{
+    a = mail.Contains(symb1);
+    Console.WriteLine("Please, enter a valid email address: ");
+    mail = Console.ReadLine();
+
+    while (a == false) 
+    {
+        a = mail.Contains(symb2);
+        Console.WriteLine("Please, enter a valid email address!: ");
+        mail = Console.ReadLine();
+    }
+}
+
+string email = mail.Trim();
+Console.Clear();
+Console.WriteLine($"Thank you! Your email: {email}");
+
 
 //5.2.5--------------------------------------
 
