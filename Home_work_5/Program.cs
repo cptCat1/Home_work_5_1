@@ -103,16 +103,16 @@ Console.WriteLine(d[1], d[1]); // ne razobralsa
 
 
 /*string a = "1 2 3";
-a = a.Replace(' ', ',').Replace('1','2');
+a = a.Replace(' ', ',').Replace('1', '2');
 Console.WriteLine(a); // tyt poniatno
-*/
 
-/*String s = new String('a', 3);
+
+String s = new String('a', 3);
 Console.WriteLine("The initial string: '{0}'", s);
 s = s.Replace('a', 'b').Replace('b', 'c').Replace('c', 'd');
 Console.WriteLine("The final string: '{0}'", s);
 tut nie pojmu zachem {0} vezde staviat
- */
+*/
 
 //5.2.2--------------------------------------
 
@@ -262,7 +262,7 @@ foreach (string part in partsmail)
     string[] partdoms = partsmail[1].Split(separators2, StringSplitOptions.RemoveEmptyEntries);
 */
 ///////////////////////////////////////////////
-
+/*string format = "Город: {0} \nУлица: {1} \nДом: {2} \nКвартира: {3}";
 string city, street, house, apartment;
 string[] separators = { "г.", ",", "ул.", "д.", "кв.", " " };
 Console.WriteLine("Please, enter your address in form: \"г. Город, ул. Улица, д. 1, кв. 1\"");
@@ -273,8 +273,8 @@ city = words[0];
 street = words[1];
 house = words[2];
 apartment = words[3];
-Console.WriteLine($"Город: {city} \nУлица: {street} \nДом: {house} \nКвартира: {apartment}");
-
+Console.WriteLine(format, city, street, house, apartment);
+*/
 
 //5.2.5--------------------------------------
 
