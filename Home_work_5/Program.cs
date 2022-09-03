@@ -198,25 +198,25 @@ Console.WriteLine($"Thank you! Your email: {email}");
 
 Console.WriteLine("Enter your email:");
 string mail = Console.ReadLine();
-string[] email = mail.Split(new char[] { '@' });
-string[] el = email[1].Split(new char[] { '.' });
+string[] email = mail.Split('@');
+string[] el = email[1].Split('.');
 while (email.Length != 2)
 {
     Console.WriteLine("Enter a valid email address!");
     mail = Console.ReadLine();
-    string[] email = mail.Split(new char[] { '@' });
-    email = email[1].Split(new char[] { '.' });
+    string[] email = mail.Split( '@' );
+    email = email[1].Split( '.' );
 
     while (el.Length != 2)
     {
         Console.WriteLine("Enter a valid email address!");
         mail = Console.ReadLine();
-        string[] a = mail.Split(new char[] { '@' });
+        string[] a = mail.Split('@');
 
 
 
 
-        string[] el = email[1].Split(new char[] { '.' });
+        string[] el = email[1].Split('.');
         while (el.Length != 2)
         {
 
