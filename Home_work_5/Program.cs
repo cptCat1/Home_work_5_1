@@ -168,9 +168,33 @@ r = double.Parse(Console.ReadLine());
 Console.WriteLine($"v = {v = Math.PI * h * Math.Pow(r, 2)}");
 */
 
-//5.2.4--------------------------------------
+/*string mail;
+char symb1 = '@';
+char symb2 = '.';
 
-/*Console.WriteLine("Enter your email:");
+do
+{
+    bool result = false;
+    Console.WriteLine("Enter your email:");
+    mail = Console.ReadLine();
+
+    string[] data = mail.Split(symb1);
+    if (data.Length != 2) continue;
+
+    string[] parts = data[1].Split(symb2);
+    if (parts.Length != 2) continue;
+
+    break;
+}
+while (true);
+Console.WriteLine($"Your mail:{mail}");
+*/
+
+
+/*//5.2.4--------------------------------------
+
+
+Console.WriteLine("Enter your email:");
 string mail = Console.ReadLine();
 char symb1 = '@';
 char symb2 = '.';
@@ -183,7 +207,7 @@ while (a == false)
     Console.WriteLine("Please, enter a valid email address: ");
     mail = Console.ReadLine();
 
-    while (a == false) 
+    while (a == false)
     {
         a = mail.Contains(symb2);
         Console.WriteLine("Please, enter a valid email address!: ");
@@ -194,9 +218,9 @@ while (a == false)
 string email = mail.Trim();
 Console.Clear();
 Console.WriteLine($"Thank you! Your email: {email}");
-*/
 
-/*Console.WriteLine("Enter your email:");
+
+Console.WriteLine("Enter your email:");
 string mail = Console.ReadLine();
 string[] email = mail.Split('@');
 string[] el = email[1].Split('.');
@@ -204,8 +228,8 @@ while (email.Length != 2)
 {
     Console.WriteLine("Enter a valid email address!");
     mail = Console.ReadLine();
-    string[] email = mail.Split( '@' );
-    email = email[1].Split( '.' );
+    string[] email = mail.Split('@');
+    email = email[1].Split('.');
 
     while (el.Length != 2)
     {
@@ -222,18 +246,28 @@ while (email.Length != 2)
 
         }
     }
-}
+*//*}
 Console.WriteLine($"Thank you! You email: {}");
 */
 /////////////////////////////////////////////
+
+/*string mail, domen, country, partdom;
+string[] separators = { "@" };
+string[] separators2 = { "." };
+Console.WriteLine("Please, enter email in form: mail@domen.ru");
+string email = Console.ReadLine();
+string[] partsmail = email.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+foreach (string part in partsmail)
+
+    string[] partdoms = partsmail[1].Split(separators2, StringSplitOptions.RemoveEmptyEntries);
+*/
+///////////////////////////////////////////////
 
 string city, street, house, apartment;
 string[] separators = { "г.", ",", "ул.", "д.", "кв.", " " };
 Console.WriteLine("Please, enter your address in form: \"г. Город, ул. Улица, д. 1, кв. 1\"");
 string address = Console.ReadLine();
 string[] words = address.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-foreach (string word in words)
-    Console.Clear();
 
 city = words[0];
 street = words[1];
