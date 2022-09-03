@@ -196,7 +196,7 @@ Console.Clear();
 Console.WriteLine($"Thank you! Your email: {email}");
 */
 
-Console.WriteLine("Enter your email:");
+/*Console.WriteLine("Enter your email:");
 string mail = Console.ReadLine();
 string[] email = mail.Split('@');
 string[] el = email[1].Split('.');
@@ -224,7 +224,22 @@ while (email.Length != 2)
     }
 }
 Console.WriteLine($"Thank you! You email: {}");
+*/
+/////////////////////////////////////////////
 
+string city, street, house, apartment;
+string[] separators = { "г.", ",", "ул.", "д.", "кв.", " " };
+Console.WriteLine("Please, enter your address in form: \"г. Город, ул. Улица, д. 1, кв. 1\"");
+string address = Console.ReadLine();
+string[] words = address.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+foreach (string word in words)
+    Console.Clear();
+
+city = words[0];
+street = words[1];
+house = words[2];
+apartment = words[3];
+Console.WriteLine($"Город: {city} \nУлица: {street} \nДом: {house} \nКвартира: {apartment}");
 
 
 //5.2.5--------------------------------------
