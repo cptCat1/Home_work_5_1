@@ -138,7 +138,8 @@ Console.WriteLine($"a = {a}"); // esli 3 i 2 to otvet ne chislo. Pochemu?
 
 /////////////
 
-
+double a, k, z;
+a = M A
 
 //5.2.3--------------------------------------
 
